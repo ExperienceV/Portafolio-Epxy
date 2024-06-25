@@ -1,13 +1,19 @@
-/*Fonts*/
+.valid-feedback {
+  color: rgb(145, 255, 142); /* Change the color to green for valid feedback */
+}
+
+.invalid-feedback {
+  color: rgb(255, 142, 255); /* Change the color to red for invalid feedback */
+}
 @import url('https://fonts.googleapis.com/css?family=Pixelify%20Sans:700|Pixelify%20Sans:400');
 
 body {
-  font-family: 'Pixelify Sans';
+  font-family: 'Times New Roman', serif;
   font-weight: 400;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Pixelify Sans';
+  font-family: 'Times New Roman', serif;
   font-weight: 700;
 }
 
