@@ -101,3 +101,7 @@ button{
 .logo{
   font-size: 25px;
 }
+
+.no-click{
+  pointer-events: none;
+}
