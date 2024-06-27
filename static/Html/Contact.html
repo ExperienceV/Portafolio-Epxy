@@ -85,37 +85,47 @@
               <div class="container-fluid mb-3">
                 <h1 class="border border-1 rounded d-inline px-5 texts-bg">Contact Me</h1>
               </div>
-              <div class="d-flex justify-content-between">
+              <d class="d-flex justify-content-between">
                 <div class="border border-1 rounded col-6 texts-bg text-center" style="width: 50%; height: 285px;">
                   <h2>No longer human</h2>
                 </div>
-                <form id="cmForm" action="" class="col-5 was-validated" onsubmit="submitForm(event)">
+
+                <form id="cmForm" action="" class="col-5" onsubmit="submitForm(event)">
+
                   <div class="input-group mb-4">
                     <span class="input-group-text texts-bg">@</span>
-                    <input type="text" class="form-control texts-bg" name="username" placeholder="Username | LastName">
+                    <input type="text" class="form-control texts-bg" name="username" placeholder="Username | LastName" id="username">
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback"></div>
                   </div>
+
                   <div class="input-group mb-4">
-                    <input type="text" class="form-control texts-bg" name="issue" placeholder="Issue">
+                    <input type="text" class="form-control texts-bg" name="issue" placeholder="Issue" id="Issue">
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback"></div>
                   </div>
+
                   <div class="input-group mb-4">
-                    <input type="email" class="form-control texts-bg" name="email" placeholder="Your Email">
+                    <input type="email" class="form-control texts-bg" name="email" placeholder="Your Email" id="email">
                     <span class="input-group-text texts-bg">@example.com</span>
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback"></div>
                   </div>
+
                   <div class="form-group mb-4">
                     <textarea id="my-textarea" class="form-control texts-bg" name="body" rows="3" placeholder="Your Message"></textarea>
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback"></div>
                   </div>
+
                   <div id="response"></div>
+
                   <div class="form-group mb-4">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary" id="subm">Submit</button>
                   </div>
+
+                  <script src="../Js/Script.js"></script>
+                </form>
               </div>
             </div>
         </section>
