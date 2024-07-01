@@ -41,12 +41,14 @@ i {font-size: 3rem;}
 --secondary: #ffec99;
 --accent: #2eb5ef;
 --bs-border-color:var(--text);
+--bs-dropdown-min-width: 100vh;
 }
 
 /*Styles*/
 body{
   background-color: var(--background);
-  overflow: hidden;
+  overflow-y:auto;
+  overflow-x: hidden;
 }
 
 a, p, h1, h2, h3, h4, h5, h6, i{
@@ -74,12 +76,20 @@ section{
   background-color: #b2f2bb;
 }
 
-.home2{
+.about-home2{
   background-color: #b2f2bb;
 }
 
-li{
+.projects-home3{
+  background-color: #b2f2bb;
+}
+
+.header-li{
   background-color: var(--secondary);
+}
+
+.drop-li{
+  list-style:none;
 }
 
 a:hover{
@@ -104,4 +114,93 @@ button{
 
 .no-click{
   pointer-events: none;
+}
+
+.dropdown-menu {
+  background-color: var(--secondary) !important;
+  width: 100vw !important;
+  padding: 2rem !important;
+}
+
+.dropdown-item {
+  color: var(--text) !important;
+  font-size: 1.5rem !important;
+  padding: 1rem 2rem !important;
+  border-bottom: 2px solid !important;
+  text-align: center;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--primary) !important;
+}
+
+/*Media Query*/
+@media screen and (max-width:639px) {
+  .home-h1{
+    font-size: 2.369rem;
+  }
+  .home-p{
+    font-size:1.750rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .header-ul {
+    display: none;
+  }
+  .dropdown-nav {
+    display: block;
+  }
+  .proyect-h1{
+    font-size: 1.777rem;
+  }
+}
+
+@media (min-width: 851px) {
+  .header-ul {
+    display: flex !important;
+  }
+  .dropdown-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width:460px) {
+  .about-h1{
+    font-size: 2.369rem;
+}
+}
+
+@media screen and (max-width:450px) {
+  .home{
+    width:100%;
+  }
+  .about-home2{
+    width: 100%;
+}
+}
+
+@media screen and (max-width:391px) {
+  .home-h1{
+    font-size: 1.333rem;
+  }
+  .home-p{
+    font-size:0.750rem;
+  }
+  .skills-h1{
+    font-size: 1.333rem;
+  }
+  .proyect-h1{
+    font-size:1rem;
+  }
+}
+
+@media screen and (max-width:290px) {
+  .about-h1{
+    font-size: 1.500rem;
+}
+.proyect-h1{
+  font-size: 0.750rem;
+}
 }
